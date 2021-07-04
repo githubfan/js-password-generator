@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Password Generator</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<script defer src="script.js">
+	</script>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+	<title>Password Generator</title>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">Password Generator</h1>
-  </br>
-</br>
-<div class="password-display">
-    <h3 class=" pw" id="passwordDisplay">password      </h3>
-    <button class="material-icons cpy-btn " id="copy" > content_copy   </button>
-  </div>
-  </br>
-</br>
-</br>
-
-
-
-    <form id="passwordGeneratorForm" class="form">
-      <label for="characterAmountNumber">Number Of Characters</label>
-      <div class="character-amount-container">
-        <input type="range" min="1" max="50" value="10" id="characterAmountRange">
-        <input class="number-input" type="number" min="1" max="50" value="10" id="characterAmountNumber">
-      </div>
-
-      <label for="includeUppercase">Include Uppercase</label>
-      <input type="checkbox" id="includeUppercase">
-
-      <label for="includeNumbers">Include Numbers</label>
-      <input type="checkbox" id="includeNumbers">
-
-      <label for="includeSymbols">Include Symbols</label>
-      <input type="checkbox" id="includeSymbols">
-    </br>
-  </br>
-
-      <button type="submit" id="copy" class="btn">Generate Password</button>
-
-    </form>
-  </div>
+	<div class="container">
+		<h1 class="title">Password Generator</h1><br>
+		<br>
+		<div class="password-display">
+			<h3 class=" pw" id="passwordDisplay">password</h3><button class="material-icons cpy-btn" id="copy">content_copy</button>
+		</div><br>
+		<br>
+		<br>
+		<form class="form" id="passwordGeneratorForm" name="passwordGeneratorForm">
+			<label for="characterAmountNumber">Number Of Characters</label>
+			<div class="character-amount-container">
+				<input id="characterAmountRange" max="50" min="1" type="range" value="10"> <input class="number-input" id="characterAmountNumber" max="50" min="1" type="number" value="10">
+			</div><label for="includeUppercase">Include Uppercase</label> <input id="includeUppercase" type="checkbox"> <label for="includeNumbers">Include Numbers</label> <input id="includeNumbers" type="checkbox"> <label for="includeSymbols">Include Symbols</label> <input id="includeSymbols" type="checkbox"><br>
+			<br>
+			<button class="btn" id="copy" type="submit">Generate Password</button>
+		</form>
+	</div>
 </body>
 </html>

@@ -1,106 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
-
 body {
-    background: linear-gradient(180deg, #772D8B 0%, #BF1A2F 52.6%, #F58F29 100%);    margin: 0;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Red Hat Display', sans-serif;
+	background: linear-gradient(180deg, #772D8B 0%, #BF1A2F 52.6%, #F58F29 100%);
+	margin: 0;
+	color: white;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Red Hat Display', sans-serif;
 }
-
 .container {
-    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(42px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 16px;   
-    padding: 5rem;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+	backdrop-filter: blur(42px);
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 16px;
+	padding: 5rem;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-
 .form {
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 1rem;
-    column-gap: 3rem;
-    justify-content: center;
-    align-items: center;
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 1rem;
+	column-gap: 3rem;
+	justify-content: center;
+	align-items: center;
 }
-
 .title {
-    margin: 0;
-    text-align: center;
+	margin: 0;
+	text-align: center;
 }
-
 label {
-    font-weight: bold;
+	font-weight: bold;
 }
-
 .character-amount-container {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
-
 .number-input {
-    width: 2rem;
-    font-family: 'Red Hat Display', sans-serif;
+	width: 2rem;
+	font-family: 'Red Hat Display', sans-serif;
 }
-
 .password-display {
-    background-color: white;
-    color: black;
-    padding: 1rem;
-    border: 1px solid #333;
-    height: 2rem;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    word-break: break-all;
-    border-radius: .5rem;
+	background-color: white;
+	color: black;
+	padding: 1rem;
+	border: 1px solid #333;
+	height: 2rem;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-break: break-all;
+	border-radius: .5rem;
 }
-
 .btn {
-    grid-column: span 2;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: .5rem 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 1rem;
-    font-family: 'Red Hat Display', sans-serif;
+	grid-column: span 2;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	padding: .5rem 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 1rem;
+	font-family: 'Red Hat Display', sans-serif;
 }
-
 .btn:hover {
-    background-color: #ffffff33;
+	background-color: #ffffff33;
 }
-
 .password_show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 .pw {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
-
 .cpy-btn {
-    margin-left: auto;
-    background: none;
-    color: black;
-    border: none;
+	margin-left: auto;
+	background: none;
+	color: black;
+	border: none;
 }
-
 .cpy-btn:hover {
-    cursor: pointer;
-    transition: 0.5;
-
+	cursor: pointer;
+	transition: 0.5;
 }
