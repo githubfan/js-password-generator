@@ -6,12 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
-  <title>Password Generator</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+    <title>Password Generator</title>
 </head>
 <body>
   <div class="container">
     <h1 class="title">Password Generator</h1>
-    <h3 class="password-display" id="passwordDisplay">password</h3>
+  </br>
+</br>
+<div class="password-display">
+    <h3 class=" pw" id="passwordDisplay">password      </h3>
+    <button class="material-icons cpy-btn " id="copy" > content_copy   </button>
+  </div>
+  </br>
+</br>
+</br>
+
+
+
     <form id="passwordGeneratorForm" class="form">
       <label for="characterAmountNumber">Number Of Characters</label>
       <div class="character-amount-container">
@@ -27,8 +40,11 @@
 
       <label for="includeSymbols">Include Symbols</label>
       <input type="checkbox" id="includeSymbols">
+    </br>
+  </br>
 
-      <button type="submit" class="btn">Generate Password</button>
+      <button type="submit" id="copy" class="btn">Generate Password</button>
+
     </form>
   </div>
 </body>

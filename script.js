@@ -28,6 +28,7 @@ form.addEventListener('submit', e => {
   const includeSymbols = includeSymbolsElement.checked
   const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
   passwordDisplay.innerText = password
+  
 })
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
@@ -60,3 +61,12 @@ function arrayFromLowToHigh(low, high) {
     characterAmountRange.value = value
   }
 
+  document.querySelector('#copy').addEventListener('click', () => {
+    navigator.clipboard.writeText(document.querySelector('#passwordDisplay').textContent)
+      .then(() => {
+        alert('Text copied.');
+      })
+      .catch(() => {
+        Alert('Failed ');
+      });
+  });
