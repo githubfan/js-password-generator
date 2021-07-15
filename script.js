@@ -67,6 +67,6 @@ function arrayFromLowToHigh(low, high) {
         alert('Text copied.');
       })
       .catch(() => {
-        Alert('Failed ');
+        alert('Failed.');
       });
   });
